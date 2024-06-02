@@ -1,6 +1,6 @@
 {
   "name": "@webscli/i",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@webscli/com": "^1.0.0",
-    "@webscli/u": "^1.0.0"
+    "@webscli/com": "^1.0.1",
+    "@webscli/u": "^1.0.1"
   }
 }
