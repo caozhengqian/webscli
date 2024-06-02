@@ -16,7 +16,7 @@
   "author": "caozhengqian",
   "license": "ISC",
   "dependencies": {
-    "@webscli/i": "^1.0.1",
+    "@webscli/i": "^1.0.2",
     "@webscli/u": "^1.0.1",
     "commander": "^12.1.0",
     "dirname-filename-esm": "^1.1.1",

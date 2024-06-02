@@ -1,5 +1,5 @@
-import Command from '@webs/command'
-import { log } from '@webs/utils'
+import Command from '@webscli/com'
+import { log } from '@webscli/u'
 class InitCommand extends  Command{
 
   get command(){
