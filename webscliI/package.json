@@ -11,5 +11,9 @@
   "publishConfig": {
     "access": "public"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@webscli/com": "^1.0.0",
+    "@webscli/u": "^1.0.0"
+  }
 }

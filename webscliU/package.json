@@ -11,5 +11,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "npmlog": "^7.0.1"
+  }
 }
