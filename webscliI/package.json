@@ -1,6 +1,6 @@
 {
   "name": "@webscli/i",
-  "version": "1.1.2",
+  "version": "1.1.6",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -15,6 +15,7 @@
   "dependencies": {
     "@webscli/com": "^1.0.1",
     "@webscli/u": "^1.0.5",
+    "execa": "^6.1.0",
     "fs-extra": "^11.2.0",
     "ora": "^8.0.1",
     "path-exists": "^5.0.0"

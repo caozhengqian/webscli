@@ -8,7 +8,7 @@ const ADD_TEMPLATE     = [{
   name:"vue3项目模板",
   value:"vue3",
   npmName:"@webstemplate/vue3",
-  version:"1.0.9",
+  version:"1.0.0",
   forceInstall:true
 },{
   name:"react18项目模板",
@@ -70,11 +70,12 @@ export default async function createTemplate(name,options){
     log.verbose('selectedTemplate==',selectedTemplate)
     const latestVersion = await getLatestVersion(selectedTemplate.npmName) //通过npm接口获取npm上的模板最新版本
     log.verbose('latestVersion==',latestVersion)
+    selectedTemplate.version = latestVersion
     const targetPath = makeTargetPath()
     return {
       type:addType,
       name:addName,
-      template:addTemplate,
+      template:selectedTemplate,
       targetPath
     }
   }
