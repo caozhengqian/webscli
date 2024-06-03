@@ -1,5 +1,6 @@
 import Command from '@webscli/com'
 import { log } from '@webscli/u'
+import createTemplate from "./createTemplate.js";
 class InitCommand extends  Command{
 
   get command(){
@@ -15,14 +16,10 @@ class InitCommand extends  Command{
     ]
   }
   action([name,opts]){
-    // console.log(`%c intide action`, "color:red");
     log.info('init',name,opts)
-    new Promise(resolve=>{
-      resolve()
-    }).then(()=>{
-      throw new Error('error from Promise')
-    })
-    throw new Error('普通异常')
+    createTemplate(name,opts) //1.选择项目模板，生成项目信息
+    //2.下载项目模板至缓存目录
+    //3.安装项目模板至项目目录
   }
 }
 function Index(instance){
