@@ -13,6 +13,7 @@
   },
   "type": "module",
   "dependencies": {
+    "inquirer": "^9.2.23",
     "npmlog": "^7.0.1"
   }
 }

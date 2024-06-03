@@ -1,3 +1,5 @@
 import log from './log.js'
 import isDebug from './isDebug.js'
-export {log, isDebug};
+import {makeList} from "./inquirer.js";
+
+export {log, isDebug,makeList};
