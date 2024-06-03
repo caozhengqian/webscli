@@ -1,6 +1,7 @@
 import Command from '@webscli/com'
 import { log } from '@webscli/u'
 import createTemplate from "./createTemplate.js";
+import downloadTemplate from "./downloadTemplate.js";
 class InitCommand extends  Command{
 
   get command(){
@@ -15,9 +16,11 @@ class InitCommand extends  Command{
       ['-vv, --vvv','是否vvv',false]
     ]
   }
-  action([name,opts]){
+  async action([name,opts]){
     log.info('init',name,opts)
-    createTemplate(name,opts) //1.选择项目模板，生成项目信息
+    const selectedTemplate = await createTemplate(name,opts) //1.选择项目模板，生成项目信息
+    log.verbose('template',selectedTemplate)
+    await downloadTemplate(selectedTemplate)
     //2.下载项目模板至缓存目录
     //3.安装项目模板至项目目录
   }
