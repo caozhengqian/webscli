@@ -1,4 +1,4 @@
-import {makeList,log,makeInput} from "@webscli/u";
+import {makeList,log,makeInput,getLatestVersion} from "@webscli/u";
 
 const ADD_TYPE_PROJECT = "project"
 const ADD_TYPE_PAGE    = "page"
@@ -6,12 +6,14 @@ const ADD_TEMPLATE     = [{
   name:"vue3项目模板",
   value:"vue3",
   npmName:"@webstemplate/vue3",
-  version:"1.0.0"
+  version:"1.0.9",
+  forceInstall:true
 },{
   name:"react18项目模板",
   value:"react18",
   npmName:"@webstemplate/react18",
-  version:"1.0.0"
+  version:"1.0.0",
+  forceInstall:true
 }]
 const ADD_TYPE        =[
   {
@@ -54,6 +56,8 @@ export default async function createTemplate(name,options){
     log.verbose('getAddTemplate==',getAddTemplate)
     const selectedTemplate = ADD_TEMPLATE.find(_=>_.value ===addTemplate)
     log.verbose('selectedTemplate==',selectedTemplate)
+    const latestVersion = await getLatestVersion(selectedTemplate.npmName)
+    log.verbose('latestVersion==',latestVersion)
     return {
       type:addType,
       name:addName,
