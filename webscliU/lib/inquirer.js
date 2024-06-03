@@ -20,4 +20,9 @@ function make({choices,defaultValue,message="请选择",type="list",require=true
 
 export function makeList(params){
   return make({...params})
+}export function makeInput(params){
+  return make({
+    type:'input',
+    ...params
+  })
 }
