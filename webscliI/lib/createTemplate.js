@@ -1,4 +1,4 @@
-import {makeList} from "@webscli/u";
+import {makeList,log} from "@webscli/u";
 
 const ADD_TYPE_PROJECT = "project"
 const ADD_TYPE_PAGE    = "page"
