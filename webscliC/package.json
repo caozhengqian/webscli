@@ -1,6 +1,6 @@
 {
   "name": "@webscli/c",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -16,7 +16,7 @@
   "author": "caozhengqian",
   "license": "ISC",
   "dependencies": {
-    "@webscli/i": "^1.1.9",
+    "@webscli/i": "^1.2.0",
     "@webscli/u": "^1.0.5",
     "commander": "^12.1.0",
     "dirname-filename-esm": "^1.1.1",

@@ -5,13 +5,13 @@ import path from 'node:path'
 const ADD_TYPE_PROJECT = "project"
 const ADD_TYPE_PAGE    = "page"
 const ADD_TEMPLATE     = [{
-  name:"vue3项目模板",
+  name:"CRM模板(vue)",
   value:"vue3",
   npmName:"@webstemplate/vue3",
   version:"1.0.0",
   forceInstall:true
 },{
-  name:"react18项目模板",
+  name:"ERP模板(react)",
   value:"react18",
   npmName:"@webstemplate/react18",
   version:"1.0.0",
