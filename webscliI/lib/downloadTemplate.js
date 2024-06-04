@@ -37,6 +37,6 @@ export default async function downloadTemplate(seletedTemplate){
 
   } catch (e) {
       spinner.stop()
-    printErrorLog(e)
+      printErrorLog(e)
   }
 }

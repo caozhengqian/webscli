@@ -26,7 +26,7 @@ const ADD_TYPE        =[
     value:ADD_TYPE_PAGE
   }
 ]
-const TEMP_HOME       ='.cache-emplate'
+const TEMP_HOME       ='.cache-template'
 function getAddType(){
   return makeList({
     choices:ADD_TYPE,
