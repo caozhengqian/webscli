@@ -5,7 +5,7 @@ if (isDebug()) {
 } else {
   log.level = 'info';
 }
-log.heading = '脚手架：';
+log.heading = '公司库：';
 log.addLevel('success', 2000, { fg: 'green', bold: true });
 
 export default log

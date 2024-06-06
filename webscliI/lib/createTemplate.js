@@ -78,5 +78,11 @@ export default async function createTemplate(name,options){
       template:selectedTemplate,
       targetPath
     }
+  }else{
+    log.verbose('页面==',addType)
+    log.info('请至http://www.daqianaierzi.com使用更好的解决方案')
+    return {
+      type:addType,
+    }
   }
 }
