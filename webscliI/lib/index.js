@@ -18,7 +18,7 @@ class InitCommand extends  Command{
     ]
   }
   async action([name,opts]){
-    log.info('init',opts)
+    log.verbose('init',opts)
     const selectedTemplate = await createTemplate(name,opts) //1.选择项目模板，生成项目信息
     log.verbose('template',selectedTemplate)
     if(selectedTemplate.type !== 'page'){
