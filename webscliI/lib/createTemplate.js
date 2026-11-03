@@ -5,6 +5,12 @@ import path from 'node:path'
 const ADD_TYPE_PROJECT = "project"
 const ADD_TYPE_PAGE    = "page"
 const ADD_TEMPLATE     = [{
+  name:"fullweb3全栈",
+  value:"fullweb3",
+  npmName:"@webstemplate/fullweb3",
+  version:"1.0.2",
+  forceInstall:true
+},{
   name:"CRM模板(vue)",
   value:"vue3",
   npmName:"@webstemplate/vue3",
