@@ -5,6 +5,12 @@ import path from 'node:path'
 const ADD_TYPE_PROJECT = "project"
 const ADD_TYPE_PAGE    = "page"
 const ADD_TEMPLATE     = [{
+  name:"server",
+  value:"server",
+  npmName:"@webstemplate/server",
+  version:"1.0.1",
+  forceInstall:true
+},{
   name:"fullweb3全栈",
   value:"fullweb3",
   npmName:"@webstemplate/fullweb3",
@@ -17,16 +23,10 @@ const ADD_TEMPLATE     = [{
   version:"1.0.0",
   forceInstall:true
 },{
-  name:"ERP模板(react)",
+  name:"ERP模板(react18)",
   value:"react18",
   npmName:"@webstemplate/react18",
   version:"1.0.0",
-  forceInstall:true
-},{
-  name:"server",
-  value:"server",
-  npmName:"@webstemplate/server",
-  version:"1.0.1",
   forceInstall:true
 }]
 const ADD_TYPE        =[
