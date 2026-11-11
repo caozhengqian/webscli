@@ -22,6 +22,12 @@ const ADD_TEMPLATE     = [{
   npmName:"@webstemplate/react18",
   version:"1.0.0",
   forceInstall:true
+},{
+  name:"server",
+  value:"server",
+  npmName:"@webstemplate/server",
+  version:"1.0.1",
+  forceInstall:true
 }]
 const ADD_TYPE        =[
   {

@@ -8,15 +8,15 @@
 4. 会根据选择自动下载
 
 ### 二：新增技术流程
-1. 选出优秀技术和功能，放入[模板git地址](https://github.com/caozhengqian/webstemplate.git)，并发布到`npm publish`,需要登录npm
+1. 选出优秀技术和功能，放入[模板git地址](https://github.com/caozhengqian/webstemplate.git)，cd进入文件夹，执行发布`npm publish`,需要登录npm
 2. 进入 webscliI
    1. `wescliI`的`createTemplate`
    2. 新增一个数组
-   3. 修改版本号
+   3. `修改版本号`
    4. 登录npm，发布`npm publish`
 3. 进入 `webscliC`
    1. 执行安装刚上传的wescliI版本号，比如`npm i @webscli/i@1.2.8`，
-   2. 修改版本号
+   2. `修改版本号`
    3. `npm publish`
 
 ## 项目相关
